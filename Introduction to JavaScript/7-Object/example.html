@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+        #1: Store the following information of a staff in an object.
+
+        ** name       : Ayşe
+        ** surname    : Yıldız
+        ** gender     : female
+        ** phone num  : 05555555555
+        ** address    : Kartal/İstanbul     
+        ** job        : computer engineering
+        ** language   : English,German
+        ** hobbies    : movies, sports, listening to music
+
+        #2: How many languages does this staff speak?
+        #3: Write down the hobbies of this staff.
+        #4: Create a 3-element staff information list.
+
+    */
+
+    var ayse = {
+        name : 'Ayşe',
+        surname: 'Yıldız',
+        gender : 'female',
+        phone_num : '05555555555',
+        address : 'Kartal/İstanbul',
+        job : 'Computer Engineering',
+        language : ['english', 'german'],
+        hobbies : ['movies','sports','listen to music']
+    };
+
+    console.log('Staff can speak ' + ayse.language.length + ' languages.');
+    
+    for(var i=0; i<ayse.hobbies.length; i++){
+        console.log(ayse.hobbies[i]);
+    }
+
+    var personel = [
+        {
+            name : 'Ayşe',
+            surname: 'Yıldız',
+            gender : 'female',
+            phone_num : '05555555555',
+            address : 'Kartal/İstanbul',
+            job : 'Computer Engineering',
+            language : ['english', 'german'],
+            hobbies : ['movies','sports','listen to music']
+        },
+        {
+            name : 'Ali',
+            surname: 'Yılmaz',
+            gender : 'Male',
+            phone_num : '05373373737',
+            address : 'Tuzla/İstanbul',
+            job : 'Computer Engineering',
+            language : ['english', 'german'],
+            hobbies : ['movies','sports','listen to music','walk']
+        },
+        {
+            name : 'Fatma',
+            soyad: 'Mutlu',
+            surname : 'Female',
+            phone_num : '05511111111',
+            address : 'Kadıköy/İstanbul',
+            job : 'Computer Engineering',
+            language : ['english', 'german', 'russian'],
+            hobbies : ['movies','sports','listen to music','cook']
+        }
+    ];
+    console.log(personel);
+
+    personel.forEach(function(personel) {
+        console.log(personel.name);
+    });
+    
+    </script>
+    
+</body>
+</html>

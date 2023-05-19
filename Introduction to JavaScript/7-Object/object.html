@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var brand = ['Opel','Toyota','Mazda'];
+        var model = ['Corsa','Yaris','CX-3'];
+        var year = ['2015','2012','2016'];
+
+        console.log(brand[0] + ' ' + model[0] + ' ' + year[0]);
+
+        var opel = ['Opel','Corsa','2015'];
+        var toyota = ['Toyota','Yaris','2012'];
+        var mazda = ['Mazda','CX-3','2016'];
+
+        console.log(opel);
+        */
+
+        var opel={
+            brand : 'Opel',
+            model : 'Corsa',
+            year : '2015',
+            color : 'blue', 
+            auto : true
+        };
+
+        console.log(opel.brand);
+        console.log(opel.outo);
+        console.log(opel['color']);
+
+        var toyota = new Object();
+
+        toyota.brand='Toyota';
+        toyota.model='Yaris';
+        toyota.year='2012';
+        toyota.color='black';
+        toyota.auto=true;
+
+        console.log(toyota);
+
+        var cars = [
+            {
+                brand : 'Opel',
+                model : 'Corsa',
+                yaer : '2015',
+                color : 'blue', 
+                auto : true
+            },
+            {
+                brand : 'Mazda',
+                model : 'CX-3',
+                year : '2017',
+                color : 'black', 
+                auto : true
+            }
+        ];
+        
+        console.log(cars);
+        console.log(cars[1].auto);
+
+        for(var i=0; i<cars.length; i++){
+            console.log(cars[i].color);
+        }
+    </script>
+</body>
+</html>

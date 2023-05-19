@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var brand = ["Opel","Toyota","Mazda","Renault"];
+        var model = new Array("Corsa","Yaris","CX-3","Clio");
+
+        console.log(brand);
+        console.log(model[2]);
+
+        model[0]="Astra";
+
+        console.log(model);
+
+        var auris = ["Toyota","Auris",42,true];
+
+        auris.push('blue');
+        auris.unshift('HB');
+        auris.pop();
+        auris.shift();
+
+        console.log(auris);
+
+        for(var i=0; i<brand.length; i++){
+            console.log(brand[i]);
+        }
+
+        if(brand.indexOf('Mazda')!==-1){
+                console.log("found");
+        }
+        else{
+            console.log("not found");
+        }
+    </script>
+</body>
+</html>

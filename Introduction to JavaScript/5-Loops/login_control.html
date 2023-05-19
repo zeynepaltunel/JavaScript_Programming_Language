@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ask the user for user information until 
+        they pass the username and password check
+        var k_username = "guest" 
+        var k_password = "12345" -->
+    <script>
+        var k_username = "guest";
+        var k_password = "12345";
+        var loggedin = false;
+
+        while(loggedin==false){
+            
+            var username = prompt("name: ");
+            var password = prompt("password: ");
+
+            if((username == k_username) && (password == k_password)){
+                console.log('user logged in...');
+                loggedin = true;
+            }
+            else{
+                console.log("Wrong name or password!");
+            }
+        }
+    </script>
+</body>
+</html>

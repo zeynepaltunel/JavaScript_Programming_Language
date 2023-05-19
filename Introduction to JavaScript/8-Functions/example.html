@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            #1 : Write a function that calculates 
+            whether a given number is odd or even.
+
+            #2 : Write the function that calculates 
+            the factorial of a given number.
+
+            #3 : Write the function that prints the 
+            elements of an array sent to it.
+        */
+
+        function evenOrOdd(a){
+            if(a%2==0){
+                console.log('Number is even.');
+            }
+            else{
+                console.log('Number is odd.');
+            }
+        }
+        console.log(evenOrOdd(20));
+
+        function fact(b){
+            var sum = 1;
+            for(var i=b; i>0; i--){
+                sum = sum*i;
+            }
+            return sum;
+        }
+        console.log(fact(5));
+
+        var colors = ['yellow','red','blue','orange','green'];
+
+        function array(A){
+            A.forEach(function(item) {
+                console.log(item);
+            });
+        }
+
+        array(colors);
+
+    
+    </script>
+</body>
+</html>

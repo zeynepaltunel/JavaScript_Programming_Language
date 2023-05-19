@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* sentence summary app */
+        /* Extract a summary according to the 
+           desired number of characters in a sentence. 
+           But the point to split cannot be a word. */
+        
+           var sentences = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nulla.';
+
+           function summary(sentences,maxCharachter){
+
+                var summarySentence = [];
+
+                if(maxCharachter>sentences.length){
+                    return sentences;
+                }
+                else{
+                    var words = sentences.split(' ');
+                    var sumCharacter = 0;
+
+                    for(var i=0; i<words.length; i++){
+                        summarySentence.push(words[i]);
+                        sumCharacter+=words[i].length;
+
+                        if(sumCharacter>maxCharachter){
+                            break;
+                        }
+                    }
+                }
+
+                return summarySentence.join(' ')+'...';
+           }
+           console.log(summary(sentences,20));
+
+    </script>
+</body>
+</html>

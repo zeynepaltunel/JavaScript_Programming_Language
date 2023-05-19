@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tag Access</title>
+    <style>
+        .box{
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            float: left;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="blue" class="box"></div>
+    <div id="red" class="box"></div>
+    <div id="yellow" class="box"></div>
+
+    <script>
+        var isBlue = false;
+        var Blue = document.getElementById('blue');
+
+        setInterval(function(){
+            if(isBlue){
+                Blue.style.background='green';
+                isBlue=false;
+            }
+            else{
+                Blue.style.background='blue';
+                isBlue=true;
+            }
+        
+        },1000);
+    </script>
+</body>
+</html>
