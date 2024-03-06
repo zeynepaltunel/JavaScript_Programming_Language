@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function sayHello() {
+            alert('Hello!');
+        }
+
+        sayHello();
+
+        function showMessage() {
+            let message = "Hello! I'm Zeynep."; // Yerel Değişken
+
+            alert( message );
+        }
+        
+        let message2 = "Hello! I'm Ali."; // Dış Değişken
+        
+        showMessage(); // Hello! I'm Zeynep.
+        //alert( message ); // <-- Error! Bu değişken `showMessage` fonksiyonu içinde erişilebilir.
+        alert( message2 );
+
+        let userName = "Zeynep";
+
+        function showName(){
+            alert("Your name is " + userName);
+        }
+         showName();
+
+        function showName2(){
+            userName = "Ali";
+            alert("Your name is " + userName);
+        } 
+        showName2();
+    </script>  
+</body>
+</html>
