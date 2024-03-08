@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="btn" type="button" value="Click me"/>
+    <script>
+
+        //element.addEventListener(event, handler[ options]);
+
+        //element.removeEventListener(event, handler[ options]);
+
+        function handler1() {
+            alert('Hello Zeynep!');
+        };
+
+        function handler2() {
+            alert('Good Bye Zeynep!');
+        }
+
+        btn.onclick = () => alert("Hello");
+        btn.addEventListener("click", handler1); // Hello Zeynep!
+        btn.addEventListener("click", handler2); // Good Bye Zeynep!
+
+
+    </script>
+</body>
+</html>

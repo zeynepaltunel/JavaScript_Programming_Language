@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- HTML Özelliği -->
+    <script>
+        function count() {
+            for (let i = 1; i < 100; i++) {
+                alert(i + " kez tıklandı.");
+            }
+        }
+        
+    </script>
+    <input type="button" onclick="count()" id="btn" value="Click Me">
+    
+     <!-- DOM Özelliği -->
+     <input id="btn" type="button" value="Click me">
+     <script>
+       btn.onclick = function() {
+         alert('Hellooo!!!');
+       };
+
+       function sayHello() {
+        alert("Hellooo!");
+       }
+       btn.onclick = sayHello;
+       
+     </script>
+</body>
+</html>
