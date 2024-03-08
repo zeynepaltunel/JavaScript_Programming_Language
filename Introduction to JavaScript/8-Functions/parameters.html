@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function message(name, age) {
+            let str = name + " " + age + " yaşındadır";
+            alert(str);
+        }
+
+        message("Zeynep", 23);
+
+        function multiplication(num1,num2) {
+            return num1 * num2;
+        }
+        let mult = multiplication(3,7);
+        alert("Result: " + mult);
+
+        function evenOrOdd(num) {
+            if(num%2 == 0)
+                return "even";
+            else
+                return "odd";
+        }
+        let number = evenOrOdd(21);
+        alert("Entered number is " + number);
+
+    </script>
+    
+</body>
+</html>
